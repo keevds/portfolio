@@ -77,7 +77,16 @@ export const GritoTitulo = styled.h1`
 	font-size: 3rem;
 `;
 
-export const GritoTexto = styled.p``;
+export const GritoTexto = styled.p`
+	> a {
+		color: black;
+		margin: 5px 0px;
+		text-decoration: underline;
+		&:hover {
+			color: #f42a2c;
+		}
+	}
+`;
 
 function sobre() {
 	useEffect(() => {
@@ -92,8 +101,8 @@ function sobre() {
 					<Nome>Kevin Barbosa</Nome>
 					<Infos>Moro no Rio de Janeiro e tenho 25 anos</Infos>
 					<Texto>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla nisi, hendrerit ut felis vitae, tempus egestas arcu. Donec turpis
-						tortor, pharetra a justo at, cursus facilisis dolor. Ut at pellentesque risus. Phasellus eget finibus erat. Aenean malesuada lacus ac.
+						Tenho 9 anos de experiência como designer, já trabalhei em gráficas, agências e em alguns projetos pessoais. Atualmente estudo UX/UI
+						Design na EBAC e estou me aprofundando mais na minha segunda paixão, que é a programação.
 					</Texto>
 				</ConteudoPerfil>
 			</ContainerPerfil>
@@ -108,8 +117,15 @@ function sobre() {
 					allowfullscreen></iframe>
 				<GritoTitulo>Grito Filmes</GritoTitulo>
 				<GritoTexto>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla nisi, hendrerit ut felis vitae, tempus egestas arcu. Donec turpis
-					tortor, pharetra a justo at, cursus facilisis dolor. Ut at pellentesque risus. Phasellus
+					A Grito é uma produtora Co/Fundada em 2015 por mim e pelo meu amigo{' '}
+					<a href="https://www.instagram.com/ianmiiranda/" target="_blank">
+						@ianmiiranda
+					</a>
+					. Temos um pouco mais de 600+ inscritos no{' '}
+					<a href="https://www.youtube.com/channel/UCAXJDHJtf8eYwW88lzJiFEw" target="_blank">
+						Youtube
+					</a>{' '}
+					e diversas músicas e clipes produzidos por nós.
 				</GritoTexto>
 			</ContainerGrito>
 		</Container>
